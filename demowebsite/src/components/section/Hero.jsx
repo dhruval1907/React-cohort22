@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import heroImage from "../../assets/hero.png";
 
 const Hero = () => {
   return (
-    <div>
-      
+    <div className="hero">
+      <img className="heroimg" src={heroImage} alt="Hero section" />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
