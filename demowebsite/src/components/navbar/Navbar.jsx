@@ -1,11 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import Logo from "./Logo";
+import Links from "./Links";
+import Button from "./Button";
 const Navbar = () => {
   return (
-    <div>
-      <h1>navbar</h1>
+    <div className="nav">
+      <Logo />
+      <Links />
+      <Button />
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
