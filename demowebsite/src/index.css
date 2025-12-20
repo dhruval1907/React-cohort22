@@ -59,3 +59,28 @@ html, body {
   width: 95%;
   object-fit: cover;
 }
+
+.section2{
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+.section-part1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+.p{
+  width: 30%;
+  font-weight: 700 !important;
+}
+
+h1{
+  font-weight: 400;
+}
+.section2-part2{
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
+}
