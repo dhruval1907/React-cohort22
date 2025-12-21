@@ -4,7 +4,7 @@ import Sec4part2 from './Sec4part2'
 
 const Sec4main = () => {
   return (
-    <div class="w-full h-[100%] flex flex-col gap-3 p-6">
+    <div class="w-full h-[100%] justify-between flex flex-col gap-3 p-6">
       <Sec4part1/>
       <Sec4part2/>
     </div>
