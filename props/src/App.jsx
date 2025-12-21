@@ -39,34 +39,18 @@ const App = () => {
         <Cards
           com="Airbnb"
           day="1 day left"
-          role="Graphical Designer"
-          money="$150-220k"
-          city="Mountain view,CA"
-          image="https://imgs.search.brave.com/vgyIh0TbKxPNSu2j2PaXLnYOyFFuLCMYlBf_fL71sOI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/NzQ2LzA1Ni9zbWFs/bC9nb29nbGUtYXBw/LWxvZ28taW4tYmln/LXN1ci1zdHlsZS0z/ZC1yZW5kZXItaWNv/bi1kZXNpZ24tY29u/Y2VwdC1lbGVtZW50/LWlzb2xhdGVkLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
+          role="Junior UI/UX Designer"
+          money="$100k"
+          city="San francisco,CA"
+          image="https://imgs.search.brave.com/S4RCYGnUuCzn0eBmRRBNX7QyAyjyw4gbT6VV06AIq1E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dGhlcml2ZXIuYXNp/YS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MC8wMS9wbmdrZXku/Y29tLWFpcmJuYi1s/b2dvLXBuZy02MDU5/NjcucG5n"
         />
         <Cards
-          com="Google"
-          day="30 day left"
+          com="Apple"
+          day="6 day left"
           role="Graphical Designer"
-          money="$150-220k"
-          city="Mountain view,CA"
-          image="https://imgs.search.brave.com/vgyIh0TbKxPNSu2j2PaXLnYOyFFuLCMYlBf_fL71sOI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/NzQ2LzA1Ni9zbWFs/bC9nb29nbGUtYXBw/LWxvZ28taW4tYmln/LXN1ci1zdHlsZS0z/ZC1yZW5kZXItaWNv/bi1kZXNpZ24tY29u/Y2VwdC1lbGVtZW50/LWlzb2xhdGVkLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
-        />
-        <Cards
-          com="Google"
-          day="30 day left"
-          role="Graphical Designer"
-          money="$150-220k"
-          city="Mountain view,CA"
-          image="https://imgs.search.brave.com/vgyIh0TbKxPNSu2j2PaXLnYOyFFuLCMYlBf_fL71sOI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/NzQ2LzA1Ni9zbWFs/bC9nb29nbGUtYXBw/LWxvZ28taW4tYmln/LXN1ci1zdHlsZS0z/ZC1yZW5kZXItaWNv/bi1kZXNpZ24tY29u/Y2VwdC1lbGVtZW50/LWlzb2xhdGVkLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
-        />
-        <Cards
-          com="Google"
-          day="30 day left"
-          role="Graphical Designer"
-          money="$150-220k"
-          city="Mountain view,CA"
-          image="https://imgs.search.brave.com/vgyIh0TbKxPNSu2j2PaXLnYOyFFuLCMYlBf_fL71sOI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzUv/NzQ2LzA1Ni9zbWFs/bC9nb29nbGUtYXBw/LWxvZ28taW4tYmln/LXN1ci1zdHlsZS0z/ZC1yZW5kZXItaWNv/bi1kZXNpZ24tY29u/Y2VwdC1lbGVtZW50/LWlzb2xhdGVkLXRy/YW5zcGFyZW50LWJh/Y2tncm91bmQtZnJl/ZS1wbmcucG5n"
+          money="$85-120k"
+          city="Coupretio,CA"
+          image="https://imgs.search.brave.com/wMHSqLVhGkbps4Z4ynarzbSA6rr98Q2SFim5d4C76Z0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9hcHBs/ZS1sb2dvLXdoaXRl/LWNvbG9yLWJyYW5k/LWZyb250LXN0b3Jl/LWxhcy12ZWdhcy0x/MjA0NDYwMzAuanBn"
         />
       </div>
   );
