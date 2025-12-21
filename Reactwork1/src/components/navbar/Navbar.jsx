@@ -4,7 +4,7 @@ import Links from './Links'
 
 const Navbar = () => {
   return (
-    <div class="flex items-center justify-between px-10 h-[70px] w-full ">
+    <div class="flex items-end justify-between px-10 h-[70px] w-full ">
       <Logo/>
       <Links/>
     </div>
