@@ -3,7 +3,7 @@ import React from "react";
 const Sec4part1 = () => {
   return (
     <div class="h-[50%] w-full flex gap-6 ">
-      <div class="flex h-[90%] w-[45%]  flex-col ">
+      <div class="flex h-[50%] w-[50%]  flex-col ">
         <h1 class="text-4xl">OUR ADVANTAGES</h1>
         <img
           class="rounded-xl h-[150%] w-full object-cover  "
@@ -29,12 +29,14 @@ const Sec4part1 = () => {
           <h1>EXCLUSIVE & UNIQUITY</h1>
           <div class="flex items-end justify-between">
             <p class="mt-7 w-[70%] ">
-             Indulge in curated collections showcasing exclusive, one-of-a-kind pieces, each with its own story and charm. Experience the allure of unique fashion pieces that radiate sophistication and individuality, curated for those who seek exclusivity.
+              Indulge in curated collections showcasing exclusive, one-of-a-kind
+              pieces, each with its own story and charm. Experience the allure
+              of unique fashion pieces that radiate sophistication and
+              individuality, curated for those who seek exclusivity.
             </p>
             <button class="bg-[#111] py-3 px-5 rounded-xl">Explore now</button>
           </div>
         </div>
-       
       </div>
     </div>
   );
