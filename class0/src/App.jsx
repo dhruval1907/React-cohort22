@@ -1,10 +1,9 @@
 import React from 'react'
-import Nav from './componenets/Nav'
+import Card from './components/Card'
 const App = () => {
   return (
-    <div>
-        <Nav />
-        {/* <Nav /> */}
+    <div class="bg-black h-screen w-full text-white">
+      <Card/>
     </div>
   )
 }
