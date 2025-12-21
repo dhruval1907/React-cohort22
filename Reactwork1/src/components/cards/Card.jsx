@@ -3,7 +3,7 @@ import Card1 from "./Card1";
 
 const Card = () => {
   return (
-    <div class="flex w-full h-[40%] gap-3 px-10 bg-black ">
+    <div class="flex w-full h-[40%] gap-3 px-6 bg-black ">
       <Card1
         name="INDENDEPANCY"
         p="Explore the creativity of independent designers from around the globe."
