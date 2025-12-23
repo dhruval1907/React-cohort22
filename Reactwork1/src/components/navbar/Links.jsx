@@ -8,7 +8,7 @@ const Links = () => {
       <h4>EVENTS</h4>
       <h4>BLOG</h4>
       <h4>CARD</h4>
-      <button class="bg-stone-400 p-2 rounded-xl text-base ">GET IN TOUCH</button>
+      <button class="bg-[#EB7056] p-2 rounded-xl text-base ">GET IN TOUCH</button>
     </div>
   )
 }
