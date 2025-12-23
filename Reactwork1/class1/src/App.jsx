@@ -106,16 +106,16 @@ const App = () => {
   ];
   return (
     <div className="p-10 bg-black h-screen w-full flex flex-wrap gap-5 items-center justify-center">
-      {users.map(function () {
+      {users.map(function (user) {
         return (
           <Card
-            key={users.id}
-            name={users.name}
-            image={users.image}
-            bio={users.bio}
-            likes={users.likes}
-            posts={users.posts}
-            views={users.views}
+            key={user.id}
+            name={user.name}
+            image={user.image}
+            bio={user.bio}
+            likes={user.likes}
+            posts={user.posts}
+            views={user.views}
           />
         );
       })}
