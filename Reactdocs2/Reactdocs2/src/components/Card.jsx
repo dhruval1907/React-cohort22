@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFileContract } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { motion } from "motion/react"
 const Card = ({ item }) => {
   return (
     <div className="w-[280px] h-[320px] bg-zinc-800/90 rounded-3xl text-white px-6 py-10 relative overflow-hidden">
