@@ -10,8 +10,8 @@ const Card = () => {
       </p>
       <div className="footer w-full absolute bottom-0 left-0 bg-sky-500 h-20">
         <div className="flex items-center h-full justify-between px-5">
-          <h4 className="text-xl font-semibold">.04b</h4>
-          <MdOutlineFileDownload className="text-2xl"/>
+          <h4 className=" font-semibold">.04b</h4>
+          <MdOutlineFileDownload className="text-2xl" />
         </div>
       </div>
     </div>
