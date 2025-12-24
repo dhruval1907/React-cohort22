@@ -1,12 +1,27 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 
 const Foreground = () => {
-  return (
-      <div className='fixed h-full w-full  top-0 left-0 z-[2] '>
-        <Card/>
-      </div>
-  )
-}
+  const data = [
+    {
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      filesize: "0.9mb",
+      close: true,
+      tag: {
+        isOpen: true,
+        tagTile: "Download now",
+        tagcolor: "green",
+      },
+    },
+  ];
 
-export default Foreground
+  return (
+    <div className="fixed h-full w-full top-0 left-0 z-[2] flex gap-5 p-5">
+      {data.map((item, indx) => (
+        <Card key={indx} item={item} />
+      ))}
+    </div>
+  );
+};
+
+export default Foreground;

@@ -1,18 +1,25 @@
 import React from "react";
 import { FaFileContract } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
-const Card = () => {
+const Card = ({ item }) => {
   return (
-    <div className="w-70 h-80 bg-zinc-800/90 rounded-4xl text-white px-6 py-10 overflow-hidden relative">
+    <div className="w-[280px] h-[320px] bg-zinc-800/90 rounded-3xl text-white px-6 py-10 relative overflow-hidden">
       <FaFileContract />
-      <p className="text-sm font-semibold mt-5 ">
-        Lorem ipsum dolor sit amet, consectetur adipisicing.
-      </p>
-      <div className="footer w-full absolute bottom-0 left-0 bg-sky-500 h-20">
-        <div className="flex items-center h-full justify-between px-5">
-          <h4 className=" font-semibold">.04b</h4>
-          <MdOutlineFileDownload className="text-2xl" />
+      <p className="text-sm font-semibold mt-5">{item.desc}</p>
+
+      <div className="absolute bottom-0 left-0 w-full">
+        <div className="flex items-center justify-between px-5 py-3">
+          <h4 className="font-semibold">{item.filesize}</h4>
+          <div className="h-10 w-10 flex items-center justify-center bg-zinc-700 rounded-full">
+            <MdOutlineFileDownload />
+          </div>
         </div>
+
+        {item.tag.isOpen && (
+          <div className="h-[50px] bg-green-600 flex items-center justify-center ">
+            <h4 className="font-semibold">{item.tag.tagTile}</h4>
+          </div>
+        )}
       </div>
     </div>
   );
