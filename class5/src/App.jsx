@@ -5,9 +5,9 @@ const App = () => {
 
   let a = 0;
   function numIncrease() {
-    a++
-    setnum(a+1)
-                console.log(a); 
+    a++;
+    setnum(a === 1 ? "sarthak" : "mayur");
+    console.log(a);
   }
 
   return (
