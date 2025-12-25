@@ -1,6 +1,9 @@
 import React from "react";
+import { useState } from "react";
 
 const App = () => {
+  const [Color, setColor] = useState(["white","black"]);
+
   return (
     <div>
       <div
@@ -14,11 +17,11 @@ const App = () => {
       >
         <div>
           <input type="radio" name="male" />
-          <label htmlFor="male"> Black</label>
+          <label htmlFor="male"> {Color === "white" ? "black" : null}</label>
         </div>
         <div>
           <input type="radio" name="male" />
-          <label htmlFor="male"> White</label>
+          <label htmlFor="male"> {Color === "black" ? "white" : null}</label>
         </div>
       </div>
     </div>
