@@ -1,17 +1,23 @@
 import React from "react";
 import { useState } from "react";
-const App = () => {
-  const user = ["aray","dhruval","sarthack","harsh"]
-  const [Num, setNum] = useState(0);
 
+const App = () => {
+  const [num, setnum] = useState(0)
   return (
-    <div>
-      <h1>{user[Num]}</h1>
-      <button onClick={()=>{
-        setNum(Num+1)
-      }}>random</button>
+
+    <div className="h-screen w-full bg-zinc-300">
+      <h1>{num}</h1>
+      <button style={{fontWeight:"600",padding:"10px 10px"}} onClick={()=>{
+        setnum(num+1)
+      }}>Increase</button>
+      <button style={{fontWeight:"600",padding:"10px 10px"}} onClick={()=>{
+        setnum(num+2)
+      }}>Increase by 2 </button>
+      <button style={{fontWeight:"600",padding:"10px 10px"}} onClick={()=>{
+        setnum(num+5)
+      }}>Increase by 5</button>
     </div>
-  );
+  )
 };
 
 export default App;
