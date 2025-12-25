@@ -1,19 +1,15 @@
 import React from "react";
 import { useState } from "react";
 const App = () => {
-  const [num, setnum] = useState(0);
-  let a = 0;
-
-  function numIncrease() {
-    a++;
-    setnum(a + 1);
-    console.log(a);
-  }
+  const user = ["aray","dhruval","sarthack","harsh"]
+  const [Num, setNum] = useState(0);
 
   return (
     <div>
-      <h1>{num}</h1>
-      <button onClick={numIncrease}>increase</button>
+      <h1>{user[Num]}</h1>
+      <button onClick={()=>{
+        setNum(Num+1)
+      }}>random</button>
     </div>
   );
 };
