@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from "react";
 const App = () => {
   const [num, setnum] = useState(0);
-
   let a = 0;
+
   function numIncrease() {
     a++;
-    setnum(a === 1 ? "sarthak" : "mayur");
+    setnum(a + 1);
     console.log(a);
   }
 
