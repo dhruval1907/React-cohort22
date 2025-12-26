@@ -1,18 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const App = () => {
-  const [isDark, setisDark] = useState(false)
   return (
-    <div style={{
-        backgroundColor:isDark?"#fff":"#111",
-        color:isDark?"#111":"#fff",
-        display:"flex",
-        alignItems:"center",
-        height:"100vh",
-        justifyContent:"center",
-    }}>
-      <h1>{isDark?"light theme":"dark theme "}</h1>
-      <button onClick={}>chnage theme </button>
+    <div className='h-screen w-full bg-black'>
       
     </div>
   )
