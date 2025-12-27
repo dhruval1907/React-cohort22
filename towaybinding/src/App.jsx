@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [user, setuser] = useState("harsh");
-  
+  const [user, setuser] = useState("");
+  const [allusers,setallusers] = useState(["harsh"])
   const formHandler = (e) => {
     e.preventDefault();
-    console.log("form submitted");
+    // setallusers(...allusers,user)
+    const olduser = [...allusers]
+    const allusers = [olduser,user]
+    setallusers(allusers)
+    console.log(allusers);
+    
   };
   return (
     <div>
@@ -16,7 +21,7 @@ const App = () => {
       >
         <input
           onChange={(e) => {
-            console.log(e.target.value);
+            setuser(e.target.value)
           }}
           type="text"
           value={user}
