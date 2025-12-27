@@ -2,13 +2,11 @@ import React, { useState } from "react";
 
 const App = () => {
 
-  const [user,setUser] = useState([""])
+  const [user,setUser] = useState("")
 
   const formHandle = (e) => {
     e.preventDefault();
-    // console.log("hello ji");
     console.log(user);
-    
     setUser("")
   };
 
