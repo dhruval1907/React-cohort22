@@ -5,11 +5,13 @@ const App = () => {
   const [allusers, setallusers] = useState([]);
   const formHandler = (e) => {
     e.preventDefault();
+
     setallusers([...allusers, user]);
+    setuser("");
     console.log(allusers);
   };
   return (
-    <div>
+    <div style={{color:"white"}}>
       <form
         onSubmit={(e) => {
           formHandler(e);
@@ -22,9 +24,13 @@ const App = () => {
           type="text"
           value={user}
           placeholder="entre your name"
+          style={{ padding: "20px 20px" }}
         />
-        <button>submit</button>
+        <button style={{ padding: "20px 20px" }}>submit</button>
       </form>
+      {allusers.map(function (elem) {
+        return <h1>{elem}</h1>
+      })}
     </div>
   );
 };
