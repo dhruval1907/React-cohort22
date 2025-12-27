@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const App = () => {
   const [user, setuser] = useState("");
-  const [allusers,setallusers] = useState(["harsh"])
+  const [allusers,setallusers] = useState([])
   const formHandler = (e) => {
     e.preventDefault();
     // setallusers(...allusers,user)
     const olduser = [...allusers]
-    const allusers = [olduser,user]
-    setallusers(allusers)
+    const newUsers = [olduser,user]
+    setallusers(newUsers)
     console.log(allusers);
     
   };
