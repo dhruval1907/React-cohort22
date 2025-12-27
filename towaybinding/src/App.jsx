@@ -2,15 +2,11 @@ import React, { useState } from "react";
 
 const App = () => {
   const [user, setuser] = useState("");
-  const [allusers,setallusers] = useState([])
+  const [allusers, setallusers] = useState([]);
   const formHandler = (e) => {
     e.preventDefault();
-    // setallusers(...allusers,user)
-    const olduser = [...allusers]
-    const newUsers = [olduser,user]
-    setallusers(newUsers)
+    setallusers([...allusers, user]);
     console.log(allusers);
-    
   };
   return (
     <div>
@@ -21,7 +17,7 @@ const App = () => {
       >
         <input
           onChange={(e) => {
-            setuser(e.target.value)
+            setuser(e.target.value);
           }}
           type="text"
           value={user}
