@@ -2,12 +2,14 @@ import React, { useState } from "react";
 
 const App = () => {
 
-  const [user,setUser] = useState[""]
+  const [user,setUser] = useState([""])
 
   const formHandle = (e) => {
     e.preventDefault();
     // console.log("hello ji");
+    console.log(user);
     
+    setUser("")
   };
 
   return (
@@ -18,7 +20,9 @@ const App = () => {
         }}
       >
         <input
-          onChange={}
+          onChange={(e)=>{
+            setUser(e.target.value)
+          }}
           type="text"
           placeholder="enter ur name"
           className="border-1 border-white rounded-sm "
