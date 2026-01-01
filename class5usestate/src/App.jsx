@@ -1,26 +1,13 @@
-import React, { useState } from "react";
+import React from 'react'
 
 const App = () => {
-  const [isRed, setIsRed] = useState(false);
-
   return (
-    <div className="h-screen w-full bg-black flex flex-col items-center justify-center gap-5 text-white">
-      <h1>{isRed ? "Red" : "Blue"}</h1>
-
-      <div
-        className={`h-[200px] w-[200px] ${
-          isRed ? "bg-red-300" : "bg-blue-300"
-        }`}
-      ></div>
-
-      <button
-        onClick={() => setIsRed(!isRed)}
-        className="px-4 py-2 bg-white text-black font-semibold"
-      >
-        Change Color
-      </button>
+    <div className='flex items-center justify-center flex-col gap-5 h-screen w-full bg-black'>
+      <h1 className='text-2xl text-white font-bold'>color : white</h1>
+      <div className='h-100 w-100 bg-white rounded-2xl'></div>
+      <button className='px-4 py-2 bg-red-400 rounded-full font-bold'>change color</button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
