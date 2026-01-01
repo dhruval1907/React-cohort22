@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from 'react'
 
 const App = () => {
-  const [color, setcolor] = useState(false);
-
   return (
-    <div className="h-screen w-full bg-black flex items-center justify-center">
-      <div onMouseOver={()=>setcolor(true)}  className={`h-100 w-100 ${color ? "bg-red-300" : "bg-blue-300"}`}></div>
+    <div className='p-5 flex gap-4'>
+      <input className='border-2 border-black' type="text" placeholder='enter your passowrd' />
+      <button className='px-4 py-2 bg-red-300 text-white rounded-full'>show pass</button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
