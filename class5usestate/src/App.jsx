@@ -1,15 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
 const App = () => {
-  const [val, setval] = useState({username : "harsh" , isLoggined : true})
+  const [val, setval] = useState({ username: "harsh", isBlocked: "Blocked" });
   return (
-    <div className='bg-red-300 h-screen w-full text-white font-semibold p-10'>
-      <p>username  :  {val.username}</p>
-      <p>isBanned  : {val.isLoggined.toString()}</p>
-      <button onClick={()=>setval({...val,isLoggined : !val.isLoggined})} className={`px-4 py-2 ${!val.isLoggined ? "bg-red-500 " : "bg-blue-300    "} rounded-full`}>change</button>
-      
+    <div className="bg-red-300 h-screen w-full text-white font-semibold p-10">
+      <p>username : {val.username}</p>
+      <p>isBanned : {val.isBlocked}</p>
+      <button onClick={()=>setval({...val,isBlocked : ""})} className={`px-3 py-2 rounded-full ${val.isBlocked ? "bg-blue-500" : "bg-red-500"}`}>Unblock</button>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
