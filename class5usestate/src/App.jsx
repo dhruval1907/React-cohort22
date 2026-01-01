@@ -7,7 +7,7 @@ const App = () => {
     <div className="p-5 flex gap-4">
       <input
         className="border-2 border-black"
-        type="text"
+        type={pass ? "password" : "text"}
         placeholder="enter your passowrd"
       />
       <button onClick={()=>setpass(!pass)}  className="px-4 py-2 bg-red-300 text-white rounded-full">
