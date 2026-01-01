@@ -6,7 +6,7 @@ const App = () => {
     <div className='bg-red-300 h-screen w-full text-white font-semibold p-10'>
       <p>name  :  {val.name}</p>
       <p>isBanned  : {val.isBanned.toString()}</p>
-      <button onClick={()=>setval({name:"dhruva"})} className='px-4 py-2 bg-blue-300 rounded-full text-black text-sm'>change user</button>
+      <button onClick={()=>setval({name:"dhruval"})} className='px-4 py-2 bg-blue-300 rounded-full text-black text-sm'>change user</button>
     </div>
   )
 }
