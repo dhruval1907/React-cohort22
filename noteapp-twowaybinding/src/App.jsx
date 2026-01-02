@@ -2,6 +2,13 @@ import React from "react";
 import image1 from "./assets/gif.gif";
 
 const App = () => {
+
+  const submitHandler = (e)=>{
+    e.preventDefault();
+    console.log("form submitted");
+    
+  }
+
   return (
     <div
       className="h-screen w-full  flex flex-col  p-5 relative"
@@ -13,7 +20,11 @@ const App = () => {
         </marquee>
       </div>
       <div className="w-[40%] h-[80%]">
-        <form className="flex items-start p-5    h-full   flex-col gap-4">
+        <form onSubmit={(e)=>{
+          // console.log(e);
+          submitHandler(e)
+          
+        }} className="flex items-start p-5    h-full   flex-col gap-4">
           <input
             type="text"
             placeholder="Enter Task "
