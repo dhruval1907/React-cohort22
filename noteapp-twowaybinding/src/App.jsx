@@ -12,7 +12,7 @@ const App = () => {
       className="h-screen w-full  flex   p-5 relative"
       style={{ background: "linear-gradient(lightblue,darkblue) " }}
     >
-      <div className="w-[40%] h-[80%]">
+      <div className="w-[40%] h-[80%] bg-red-200">
         <div className="h-[10rem] w-full">
           <marquee behavior="scroll" direction="right">
             <img className="h-[10rem]" src={image1} alt="" />
@@ -23,7 +23,7 @@ const App = () => {
             // console.log(e);
             submitHandler(e);
           }}
-          className="flex items-start p-5    h-full   flex-col gap-4"
+          className="flex items-start p-5    h-[100%]   flex-col gap-4"
         >
           <input
             type="text"
