@@ -4,7 +4,11 @@ import image1 from "./assets/gif.gif";
 const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("form submitted");
+    const copy = [...alltask]
+    copy.push = {title,details}
+    setalltask(copy)
+    console.log(copy);
+    
   };
 
   const [title, settitle] = useState("");
