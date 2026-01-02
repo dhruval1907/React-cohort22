@@ -4,16 +4,17 @@ import image1 from "./assets/gif.gif";
 const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
-    const copy = [...alltask]
-    copy.push = {title,details}
-    setalltask(copy)
-    console.log(copy);
+    const copy = [...alltask];
+    copy.push = ({ title, details });
+    setalltask(copy);
+    // console.log(copy);
+    console.log(alltask);
     
   };
 
   const [title, settitle] = useState("");
-  const [details, setdetails] = useState('')
-  const [alltask, setalltask] = useState([])
+  const [details, setdetails] = useState("");
+  const [alltask, setalltask] = useState([]);
 
   return (
     <div
@@ -29,26 +30,26 @@ const App = () => {
         <form
           onSubmit={(e) => {
             submitHandler(e);
-            setdetails("")
-            settitle("")
+            setdetails("");
+            settitle("");
           }}
           className="flex  p-15  items-center text-left  h-full   flex-col gap-4"
         >
           <h1 className="text-3xl font-semibold ">Add notes</h1>
 
           <input
-          onChange={(e)=>{
-            settitle(e.target.value)
-          }}
+            onChange={(e) => {
+              settitle(e.target.value);
+            }}
             type="text"
             value={title}
             placeholder="Enter Task "
             className="px-4 py-4 font-bold text-lg border-blue-200   border-2 rounded  w-full outline-none   "
-            />
+          />
 
           <textarea
-           onChange={(e)=>{
-             setdetails(e.target.value)
+            onChange={(e) => {
+              setdetails(e.target.value);
             }}
             value={details}
             name=""
@@ -65,8 +66,9 @@ const App = () => {
       <div className="h-full overflow-hidden p-5  w-1/2 bg-blue-900/20 rounded">
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
-          {/* <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
-          <div className="h-50 w-50 bg-white  rounded-2xl"></div> */}
+          {alltask.map(function (elem, idx) {
+            return <div key={idx} className="h-50 w-50 bg-red-200  rounded-2xl"></div>;
+          })}
         </div>
       </div>
     </div>
