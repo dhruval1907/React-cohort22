@@ -8,7 +8,7 @@ const App = () => {
       style={{ background: "linear-gradient(lightblue,darkblue) " }}
     >
       <div className="h-[10rem] w-full">
-        <marquee behavior="" direction="left">
+        <marquee behavior="scroll" direction="right">
           <img className="h-[10rem]" src={image1} alt="" />
         </marquee>
       </div>
