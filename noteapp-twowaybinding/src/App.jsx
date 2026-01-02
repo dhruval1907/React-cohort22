@@ -9,7 +9,7 @@ const App = () => {
     >
       <div className="h-[10rem] w-full">
         <marquee behavior="" direction="left">
-          <img className="h-full" src={image1} alt="" />
+          <img className="h-[10rem]" src={image1} alt="" />
         </marquee>
       </div>
       <div className="w-[40%] h-[80%]">
