@@ -5,7 +5,7 @@ const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     const copy = [...alltask];
-    copy.push = ({ title, details });
+    copy.push({ title, details });
     setalltask(copy);
     // console.log(copy);
     console.log(alltask);
@@ -67,7 +67,7 @@ const App = () => {
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
           {alltask.map(function (elem, idx) {
-            return <div key={idx} className="h-50 w-50 bg-red-200  rounded-2xl"></div>;
+            return <div key={idx} className="h-50 w-50 bg-red-200  rounded-2xl">s</div>;
           })}
         </div>
       </div>
