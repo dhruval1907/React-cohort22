@@ -8,6 +8,7 @@ const App = () => {
   };
 
   const [title, settitle] = useState("");
+  const [details, setdetails] = useState('')
 
   return (
     <div
@@ -23,6 +24,8 @@ const App = () => {
         <form
           onSubmit={(e) => {
             submitHandler(e);
+            setdetails("")
+            settitle("")
           }}
           className="flex  p-15  items-center text-left  h-full   flex-col gap-4"
         >
@@ -36,9 +39,13 @@ const App = () => {
             value={title}
             placeholder="Enter Task "
             className="px-4 py-4 font-bold text-lg border-blue-200   border-2 rounded  w-full outline-none   "
-          />
+            />
 
           <textarea
+           onChange={(e)=>{
+             setdetails(e.target.value)
+            }}
+            value={details}
             name=""
             id=""
             placeholder="Enter Details"
@@ -50,7 +57,7 @@ const App = () => {
           </button>
         </form>
       </div>
-      <div className="h-full overflow-hidden p-5  w-1/2 bg-blue-400/20 rounded-2xl">
+      <div className="h-full overflow-hidden p-5  w-1/2 bg-blue-900/20 rounded">
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
           {/* <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
