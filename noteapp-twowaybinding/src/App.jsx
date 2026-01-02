@@ -28,15 +28,15 @@ const App = () => {
           <input
             type="text"
             placeholder="Enter Task "
-            className="px-4 py-2 border-2 rounded  w-full outline-none  border-white "
+            className="px-4 py-2 font-bold text-sm border-black  border-2 rounded  w-full outline-none   "
           />
           <textarea
             name=""
             id=""
             placeholder="Enter Details"
-            className="px-4 h-32 py-3  border-2 w-full rounded border-white outline-none"
+            className="px-4 h-32 font-bold text-sm border-black  py-3  border-2 w-full rounded outline-none"
           ></textarea>
-          <button className="px-3 py-2   w-full bg-white outline-none  text-black font-semibold rounded">
+          <button className="px-3 py-2   w-full bg-blue-500 outline-none  text-black font-bold rounded">
             add note
           </button>
         </form>
