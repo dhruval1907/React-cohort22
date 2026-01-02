@@ -9,6 +9,7 @@ const App = () => {
 
   const [title, settitle] = useState("");
   const [details, setdetails] = useState('')
+  const [alltask, setalltask] = useState([])
 
   return (
     <div
