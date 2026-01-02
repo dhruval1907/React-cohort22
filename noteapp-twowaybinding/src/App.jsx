@@ -1,5 +1,5 @@
 import React from "react";
-
+import imgage form ""
 const App = () => {
   return (
     <div className="h-screen w-full  flex justify-between p-10" style={{background:"linear-gradient(lightblue,darkblue)"}}>
