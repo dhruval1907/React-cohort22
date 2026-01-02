@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import image1 from "./assets/gif.gif";
 
 const App = () => {
@@ -6,6 +6,8 @@ const App = () => {
     e.preventDefault();
     console.log("form submitted");
   };
+
+  const [title, settitle] = useState("");
 
   return (
     <div
@@ -25,17 +27,24 @@ const App = () => {
           className="flex  p-15  items-center text-left  h-full   flex-col gap-4"
         >
           <h1 className="text-3xl font-semibold ">Add notes</h1>
+
           <input
+          onChange={(e)=>{
+            settitle(e.target.value)
+          }}
             type="text"
+            value={title}
             placeholder="Enter Task "
             className="px-4 py-4 font-bold text-lg border-blue-200   border-2 rounded  w-full outline-none   "
           />
+
           <textarea
             name=""
             id=""
             placeholder="Enter Details"
             className="px-4 h-32 font-bold text-lg border-blue-200   py-3  border-2 w-full rounded outline-none"
           ></textarea>
+
           <button className="px-10 py-2  bg-blue-500 outline-none  text-black font-bold rounded text-lg">
             add note
           </button>
