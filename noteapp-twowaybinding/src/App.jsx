@@ -1,10 +1,19 @@
 import React from "react";
-import imgage form ""
+import image1 from "./assets/gif.gif";
+
 const App = () => {
   return (
-    <div className="h-screen w-full  flex justify-between p-10" style={{background:"linear-gradient(lightblue,darkblue)"}}>
-      <div className="w-[40%]">
-        <form className="flex items-start p-5   h-full   flex-col gap-4">
+    <div
+      className="h-screen w-full  flex flex-col  p-5 relative"
+      style={{ background: "linear-gradient(lightblue,darkblue) " }}
+    >
+      <div className="h-[10rem] w-full">
+        <marquee behavior="" direction="left">
+          <img className="h-full" src={image1} alt="" />
+        </marquee>
+      </div>
+      <div className="w-[40%] h-[80%]">
+        <form className="flex items-start p-5    h-full   flex-col gap-4">
           <input
             type="text"
             placeholder="Enter Task "
@@ -21,11 +30,6 @@ const App = () => {
           </button>
         </form>
       </div>
-      <img
-        className="h-80 "
-        src="https://imgs.search.brave.com/E93sTD9x14xuueBPoi0-6jmK7koxZdDK0NYLSrIYmr8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naWZk/Yi5jb20vaW1hZ2Vz/L2hpZ2gvYW5pbWF0/ZWQtd2ludGVyLWRh/eXMtd2Fsa2luZy14/aXpkbjQyeGk5NXky/NjJlLmdpZg.gif"
-        alt=""
-      />
     </div>
   );
 };
