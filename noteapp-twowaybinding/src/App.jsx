@@ -42,8 +42,19 @@ const App = () => {
       </div>
       <div className="h-full p-5  w-1/2 bg-blue-400/20 rounded-2xl">
         <div className="flex flex-col ">
-          <h1 className="text-2xl font-bold ">Your Notes :</h1>
-          
+          <h1 className="text-2xl font-bold mb-5 ">Your Notes :</h1>
+          <div className="flex flex-wrap gap-4 h-full overflow-auto">
+            <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+          </div>
         </div>
       </div>
     </div>
