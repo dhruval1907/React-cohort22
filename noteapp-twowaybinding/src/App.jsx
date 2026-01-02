@@ -22,8 +22,9 @@ const App = () => {
           onSubmit={(e) => {
             submitHandler(e);
           }}
-          className="flex  p-15  items-center   h-full   flex-col gap-4"
+          className="flex  p-15  items-center text-left  h-full   flex-col gap-4"
         >
+          <h1 className="text-3xl font-semibold ">Add notes</h1>
           <input
             type="text"
             placeholder="Enter Task "
@@ -40,24 +41,11 @@ const App = () => {
           </button>
         </form>
       </div>
-      <div className="h-full overflow-hidden  p-5  w-1/2 bg-blue-400/20 rounded-2xl">
-        <div className="flex flex-col ">
-          <h1 className="text-2xl font-bold mb-5 ">Your Notes :</h1>
-          <div className="flex flex-wrap gap-4 h-full overflow-auto">
-            <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-            <div className="h-50 w-50 bg-white  rounded-2xl"></div>
-          </div>
+      <div className="h-full overflow-hidden p-5  w-1/2 bg-blue-400/20 rounded-2xl">
+        <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
+        <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
+          <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
+          <div className="h-50 w-50 bg-white  rounded-2xl"></div>
         </div>
       </div>
     </div>
