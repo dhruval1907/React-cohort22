@@ -90,7 +90,7 @@ const App = () => {
           {alltask.map((elem, idx) => (
             <div
               key={idx}
-              className="relative w-72 h-72 p-16 rounded-2xl bg-[url(https://imgs.search.brave.com/G--QUswQ7GiYSpxk5940TURE6IxiMROjX2VyHQUJDY8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MDQ0LzI0NC9zbWFs/bC9zdGlja3ktbm90/ZXMtZm9yLXJlbWlu/ZGVycy1mcmVlLXBu/Zy5wbmc)] bg-cover
+              className="relative w-60 h-72 p-16 rounded-2xl bg-[url(https://imgs.search.brave.com/G--QUswQ7GiYSpxk5940TURE6IxiMROjX2VyHQUJDY8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MDQ0LzI0NC9zbWFs/bC9zdGlja3ktbm90/ZXMtZm9yLXJlbWlu/ZGVycy1mcmVlLXBu/Zy5wbmc)] bg-cover
               transition-all duration-300
               hover:-translate-y-2 hover:shadow-2xl"
               style={{
@@ -109,7 +109,7 @@ const App = () => {
                 {elem.title}
               </h2>
 
-              <p className="text-sm mt-3 flex items-start gap-2 line-clamp-4">
+              <p className="text-sm mt-3 w-full  flex items-start gap-2 line-clamp-4">
                 <FaRegArrowAltCircleRight />
                 {elem.details}
               </p>
