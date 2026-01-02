@@ -22,7 +22,7 @@ const App = () => {
           onSubmit={(e) => {
             submitHandler(e);
           }}
-          className="flex items-start p-15    h-full   flex-col gap-4"
+          className="flex  p-15  items-center   h-full   flex-col gap-4"
         >
           <input
             type="text"
@@ -35,7 +35,7 @@ const App = () => {
             placeholder="Enter Details"
             className="px-4 h-32 font-bold text-lg border-blue-200   py-3  border-2 w-full rounded outline-none"
           ></textarea>
-          <button className="px-3 py-2   w-full bg-blue-500 outline-none  text-black font-bold rounded text-lg">
+          <button className="px-10 py-2  bg-blue-500 outline-none  text-black font-bold rounded text-lg">
             add note
           </button>
         </form>
