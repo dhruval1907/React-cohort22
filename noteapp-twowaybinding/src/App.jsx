@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div
-      className="h-screen w-full  flex   p-5 relative"
+      className="h-screen w-full  flex justify-between  p-5 relative"
       style={{ background: "linear-gradient(lightblue,darkblue) " }}
     >
       <div className="w-[40%] h-[80%] ">
@@ -40,7 +40,12 @@ const App = () => {
           </button>
         </form>
       </div>
-      <div className="h-32 w-32 bg-white rounded-2xl"></div>
+      <div className="h-full p-5  w-1/2 bg-blue-400/20 rounded-2xl">
+        <div className="flex flex-col ">
+          <h1 className="text-2xl font-bold ">Your Notes :</h1>
+          
+        </div>
+      </div>
     </div>
   );
 };
