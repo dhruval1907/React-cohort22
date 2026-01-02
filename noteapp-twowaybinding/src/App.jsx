@@ -63,13 +63,13 @@ const App = () => {
           </button>
         </form>
       </div>
-      <div className="h-full overflow-hidden p-5  w-1/2 bg-blue-900/20 rounded">
+      <div className="h-full overflow-hidden p-5  w-[60%] bg-blue-900/20 rounded">
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
           {alltask.map(function (elem, idx) {
-            return <div key={idx} className="h-52 w-40 p-14 font-bold leading-tight bg-[url(https://imgs.search.brave.com/G--QUswQ7GiYSpxk5940TURE6IxiMROjX2VyHQUJDY8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MDQ0LzI0NC9zbWFs/bC9zdGlja3ktbm90/ZXMtZm9yLXJlbWlu/ZGVycy1mcmVlLXBu/Zy5wbmc)]  rounded-2xl bg-cover">
-              <h2 className="text-sm ">{elem.title}</h2>
-              <p className="text-sm ">{elem.details}</p>
+            return <div key={idx} className="h-60 w-60 p-16 font-bold leading-tight bg-[url(https://imgs.search.brave.com/G--QUswQ7GiYSpxk5940TURE6IxiMROjX2VyHQUJDY8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MDQ0LzI0NC9zbWFs/bC9zdGlja3ktbm90/ZXMtZm9yLXJlbWlu/ZGVycy1mcmVlLXBu/Zy5wbmc)]  rounded-2xl bg-cover">
+              <h2 className="text-sm w-full">{elem.title}</h2>
+              <p className="text-sm  w-full">{elem.details}</p>
             </div>;
           })}
         </div>
