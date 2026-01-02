@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import image1 from "./assets/gif.gif";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
-
 const App = () => {
   const submitHandler = (e) => {
     e.preventDefault();
@@ -11,7 +10,6 @@ const App = () => {
     setalltask(copy);
     // console.log(copy);
     console.log(alltask);
-    
   };
 
   const [title, settitle] = useState("");
@@ -69,10 +67,20 @@ const App = () => {
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
           {alltask.map(function (elem, idx) {
-            return <div key={idx} className="h-60 w-60 p-16 font-bold leading-tight bg-[url(https://imgs.search.brave.com/G--QUswQ7GiYSpxk5940TURE6IxiMROjX2VyHQUJDY8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MDQ0LzI0NC9zbWFs/bC9zdGlja3ktbm90/ZXMtZm9yLXJlbWlu/ZGVycy1mcmVlLXBu/Zy5wbmc)]  rounded-2xl bg-cover">
-              <h2 className="text-sm w-full flex gap-2 items-center"><FaRegArrowAltCircleRight/> {elem.title}</h2>
-              <p className="text-sm  w-full flex gap-2 items-center"><FaRegArrowAltCircleRight/> {elem.details}</p>
-            </div>;
+            return (
+              <div
+                key={idx}
+                className="h-80 w-80 p-20 font-bold leading-tight bg-[url(https://imgs.search.brave.com/G--QUswQ7GiYSpxk5940TURE6IxiMROjX2VyHQUJDY8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/MDQ0LzI0NC9zbWFs/bC9zdGlja3ktbm90/ZXMtZm9yLXJlbWlu/ZGVycy1mcmVlLXBu/Zy5wbmc)]  rounded-2xl bg-cover"
+              >
+                <h2 className="text-sm w-full flex gap-2 items-center">
+                  <FaRegArrowAltCircleRight /> {elem.title}
+                </h2>{" "}
+                <br />
+                <p className="text-sm  w-full flex gap-2 items-center">
+                  <FaRegArrowAltCircleRight /> {elem.details}
+                </p>
+              </div>
+            );
           })}
         </div>
       </div>
