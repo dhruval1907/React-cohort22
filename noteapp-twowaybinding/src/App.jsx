@@ -13,9 +13,9 @@ const App = () => {
       style={{ background: "linear-gradient(lightblue,darkblue) " }}
     >
       <div className="w-[40%] h-[80%] ">
-        <div className="h-[10rem] w-full">
+        <div className="h-[5rem] w-full">
           <marquee behavior="scroll" direction="right">
-            <img className="h-[15rem]" src={image1} alt="" />
+            <img className="h-[10rem]" src={image1} alt="" />
           </marquee>
         </div>
         <form
@@ -44,8 +44,8 @@ const App = () => {
       <div className="h-full overflow-hidden p-5  w-1/2 bg-blue-400/20 rounded-2xl">
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
-          <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
-          <div className="h-50 w-50 bg-white  rounded-2xl"></div>
+          {/* <div className="h-50 w-50 bg-red-200  rounded-2xl"></div>
+          <div className="h-50 w-50 bg-white  rounded-2xl"></div> */}
         </div>
       </div>
     </div>
