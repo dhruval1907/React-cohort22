@@ -67,7 +67,10 @@ const App = () => {
         <h1 className="text-2xl font-bold mb-5 ">Recent Notes :</h1>
         <div className="scroll flex flex-wrap gap-4 h-full overflow-auto">
           {alltask.map(function (elem, idx) {
-            return <div key={idx} className="h-50 w-50 bg-red-200  rounded-2xl">s</div>;
+            return <div key={idx} className="h-50 w-50 p-4 font-bold leading-tight   bg-red-200  rounded-2xl">
+              <h2>{elem.title}</h2>
+              <p>{elem.details}</p>
+            </div>;
           })}
         </div>
       </div>
