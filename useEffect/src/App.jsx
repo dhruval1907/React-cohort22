@@ -11,10 +11,9 @@ const App = () => {
   return (
     <div>
       <button onClick={getData}>clik me !!</button>
-      <h1>{pokemon}</h1>
-      {pokemon.map((elm, idx) => (
-        <h1 key={idx}>{elm.name}</h1>
-      ))}
+      {pokemon.map((elm, idx) => {
+        return <h1 key={idx}>{elm.name}</h1>;
+      })}
     </div>
   );
 };
