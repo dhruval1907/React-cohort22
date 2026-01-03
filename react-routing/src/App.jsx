@@ -1,9 +1,10 @@
 import React from 'react'
+import Home from './pages/Home'
 
 const App = () => {
   return (
-    <div>
-      
+    <div className='h-screen w-full bg-black text-white font-semibold p-5'>
+      <Home/>
     </div>
   )
 }
