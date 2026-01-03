@@ -5,28 +5,18 @@ const App = () => {
 
   const getData = async () => {
     const response = await axios.get("https://pokeapi.co/api/v2/pokemon");
-    setpokemon(response.data.results[0].name);
+    setpokemon(response.data.results);
   };
 
   return (
     <div>
       <button onClick={getData}>clik me !!</button>
       <h1>{pokemon}</h1>
-      {pokemon.map((elm, idx) => {
-        <h1 key={idx}>{elm.name}</h1>;
-      })}
+      {pokemon.map((elm, idx) => (
+        <h1 key={idx}>{elm.name}</h1>
+      ))}
     </div>
   );
 };
 
 export default App;
-//       <button onClick={getData}>Click me !!</button>
-
-//       {pokemon.map((elm, idx) => (
-//         <h1 key={idx}>{elm.name}</h1>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default App;
