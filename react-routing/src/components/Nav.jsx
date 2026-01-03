@@ -1,20 +1,18 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
 
 const Nav = () => {
   return (
-    <div>
-      <div className="p-5 flex items-center justify-between bg-black">
-        <h2 className="bg-black">Sheriyans</h2>
-        <div className="flex gap-10 px-5">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/courses">Contact</Link>
-            <Link to="/product">product</Link>
-        </div>
+    <div className='h-10 w-full flex items-center justify-between p-5'>
+      <div>
+      <h2>Sheriyans</h2>
+      </div>
+      <div className='flex gap-10'>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/courses">courses</a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

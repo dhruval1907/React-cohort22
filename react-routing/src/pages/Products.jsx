@@ -1,13 +1,12 @@
-import React from "react";
+import React from 'react'
 
-const Products = () => {
+const Home = () => {
   return (
-    <div>
-      <div className="h-screen text-8xl text-center w-full bg-black">
-        <h1>Product page </h1>
-      </div>
+    <div className="flex items-center justify-center bg-black w-full text-white h-full">
+      <h1 className='text-8xl '>Product page</h1>
+      
     </div>
-  );
-};
+  )
+}
 
-export default Products;
+export default Home
