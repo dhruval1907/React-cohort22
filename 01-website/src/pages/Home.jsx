@@ -21,7 +21,7 @@ const Home = () => {
           <img className="h-[100%] " src={image} alt="" />
           <div className="absolute z-[99]  h-60 w-[40%] flex flex-col items-center justify-center  bottom-0 left-[4%]" style={{backgroundImage:`URL(${reactange})`}}>
             <h1 className="text-red-900 mb-5 font-bold text-3xl text-left w-[55%] ">HALLOWEEN NIGHT</h1>
-            <p className="text-white/60 font-light text-lg text-left w-[55%] ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla qui unde quae iusto sunt ipsam omnis harum iure sapiente consequuntur molestiae facere.</p>
+            <p className="text-white/60 font-light text-lg text-left w-[55%] ">Unleash the darkness. Discover limited-edition styles inspired by the mystery of Halloween — crafted for bold souls who dress beyond the ordinary.</p>
           </div>
         </div>
       </div>
