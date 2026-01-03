@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Outlet } from "react-router-dom";
 
 const Products = () => {
   return (
-    <div className='h-full w-full flex items-center justify-center'>
-      <h1 className='text-8xl'>Products page</h1>
+    <div className="h-full w-full flex items-center justify-center">
+      <h1 className="text-8xl">Products page</h1>
+      
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
