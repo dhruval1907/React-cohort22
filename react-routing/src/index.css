@@ -38,10 +38,13 @@
 
 .link_404 {
     /* color: #fff !important; */
-    color: black !important;
+    color: white !important;
     padding: 10px 20px;
-    background: #39ac31;
+    background: rgba(46, 55, 55, 0.402);
     margin: 20px 0;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
     display: inline-block;
 }
 
