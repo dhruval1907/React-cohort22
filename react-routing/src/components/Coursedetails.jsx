@@ -1,11 +1,10 @@
 import React from "react";
 
-const Coursedetails = (props) => {
-    
+const Coursedetails = () => {
   return (
-    <div className="h-[84%] w-full bg-gray-600 text-center p-5">
-      <h1 className="text-white font-bold text-4xl ">
-        Course deatils page
+    <div className="h-[89.5%] w-full bg-zinc-400">
+      <h1 className="text-3xl  text-center p-5 font-bold text-white">
+        This is a Home page{" "}
       </h1>
     </div>
   );

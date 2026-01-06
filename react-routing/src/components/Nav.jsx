@@ -1,18 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
 
 const Nav = () => {
   return (
-      <div className="h-20 w-full text-white flex items-center justify-between p-5  bg-gray-400">
-        <h2 className="font-semibold text-2xl ">Sheryians</h2>  
-        <div className="flex items-center gap-10 px-5">
-          <Link className="font-semibold text-2xl cursor-pointer" to="/">Home</Link>
-          <Link className="font-semibold text-2xl cursor-pointer" to="/about">About</Link>
-          <Link className="font-semibold text-2xl cursor-pointer" to="/courses">Courses</Link>
-          <Link className="font-semibold text-2xl cursor-pointer" to="/">Login</Link>
-        </div>
+    <div className='h-10 bg-blue-500  p-10 text-white font-semibold text-xl flex justify-between items-center '>
+      <h2>Sheriyans</h2>
+      <div className='flex items-center gap-10'>  
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/Course">Course</a>
       </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Nav;
+export default Nav
