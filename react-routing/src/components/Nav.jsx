@@ -1,20 +1,11 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import React from "react";
 
 const Nav = () => {
   return (
-    <div className='h-10 w-full flex justify-between px-10 items-center'>
-        <h2>sheriyans</h2>
-        <div className='flex gap-10'>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/products">Products</NavLink>
-            <NavLink to="/products/men">Men</NavLink>
-            <NavLink to="/products/women">Women</NavLink>
-
-        </div>
+      <div className="h-20 w-full text-white bg-gray-400">
+      <h1 className="text-3xl font-bold text-center p-5">this is a nav</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
