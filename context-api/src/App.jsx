@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div className='h-screen w-full bg-black'>
-      <h1 className='text-white font-semibold text-2xl'>app</h1>
-    </div>
-  )
-}
+    <Hero />
+  );
+};
 
-export default App
+export default App;
