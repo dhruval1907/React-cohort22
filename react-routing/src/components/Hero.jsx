@@ -8,7 +8,7 @@ const Hero = () => {
     navigate(-1)
   }
   function next() {
-    navigate(+1)
+    navigate("/course")
   }
 
   return (
