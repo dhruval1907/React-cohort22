@@ -2,11 +2,14 @@ import React, { createContext } from 'react'
 
 export const userdatacontext = createContext()
 const Usercontext = (props) => {
-    console.log();
-    
+
+    const user = "dhruval"
   return (
     <div>
+        <userdatacontext.Provider value={user}>
         {props.children}
+
+        </userdatacontext.Provider>
     </div>
   )
 }
