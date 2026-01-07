@@ -6,7 +6,5 @@ import Hero from "./components/Hero.jsx";
 import Usercontext from "./context/Usercontext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <Usercontext>
     <App />
-  </Usercontext>
 );

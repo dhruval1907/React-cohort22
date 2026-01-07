@@ -1,15 +1,9 @@
-import React, { createContext } from "react";
+import React from 'react'
 
-export const userDataContext = createContext();
-const Usercontext = (props) => {
-  const user = "dhruval";
+const Usercontext = () => {
   return (
-    <div>
-      <userDataContext.Provider value={user}>
-        {props.children}
-      </userDataContext.Provider>
-    </div>
-  );
-};
+    <div>Usercontext</div>
+  )
+}
 
-export default Usercontext;
+export default Usercontext
