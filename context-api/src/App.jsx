@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Products from './components/Products'
 import Men from './components/Men'
 import Women from './components/Women'
+import Productdetails from './components/Productdetails'
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Hero/>}/>
         <Route path='/products' element={<Products/>}/>
-        <Route path='/products/:id' element={<Products/>}/>
+        <Route path='/products/:id' element={<Productdetails/>}/>
         <Route path='/Men' element={<Men/>}/>
         <Route path='/Women' element={<Women/>}/>
       </Routes>
