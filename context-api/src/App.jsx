@@ -1,10 +1,13 @@
-import React from "react";
-import Hero from "./components/Hero";
+import React from 'react'
 
-const App = () => {
+const App = (props) => {
+  console.log(props.childern);
+  
   return (
-    <Hero />
-  );
-};
+    <div>
 
-export default App;
+    </div>
+  )
+}
+
+export default App
