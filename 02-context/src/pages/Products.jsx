@@ -1,11 +1,16 @@
 import React, { useContext } from "react";
 import { ProductDatacontext } from "../context/Productcontext";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+    const naviagate = useNavigate()
   const data = useContext(ProductDatacontext);
   return (
       <div className="flex gap-5 flex-wrap">
-        {products.map(function (elem, idx) {
+          <button onClick={()=>{
+            naviagate("/")
+          }} className="h-10 w-30 bg-amber-700 rounded-2xl text-2xl font-semibold">back</button>
+        {data.map(function (elem, idx) {
           return (
             <a
               href=""
@@ -25,6 +30,7 @@ const Products = () => {
           );
         })}
       </div>
+
   );
 };
 

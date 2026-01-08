@@ -17,7 +17,7 @@ const Productcontext = (props) => {
   }, []);
 
   return (<div>
-    <ProductDatacontext value={ProductDatacontext}>
+    <ProductDatacontext value={Products}>
       {props.children}
     </ProductDatacontext>
   </div>);
