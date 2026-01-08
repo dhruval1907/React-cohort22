@@ -1,8 +1,8 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 
-
+export const ProductDatacontext = createContext()
 
 const Productcontext = (props) => {
   const [Products, setproducts] = useState([]);
@@ -16,7 +16,11 @@ const Productcontext = (props) => {
     getData();
   }, []);
 
-  return <div>{props.children}</div>;
+  return (<div>
+    <ProductDatacontext value={ProductDatacontext}>
+      {props.children}
+    </ProductDatacontext>
+  </div>);
 };
 
 export default Productcontext;
