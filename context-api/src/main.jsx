@@ -7,5 +7,9 @@ import Usercontext from "./context/Usercontext.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <Usercontext>
       <App />
+    </Usercontext>
+  </BrowserRouter>
 );

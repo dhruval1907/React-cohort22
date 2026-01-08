@@ -1,9 +1,11 @@
 import React from "react";
 
-const Usercontext = () => {
+const Usercontext = (props) => {
+  console.log();
+  
   return (
     <div>
-      <h1>Usercontext</h1>
+      {props.children}
     </div>
   );
 };
