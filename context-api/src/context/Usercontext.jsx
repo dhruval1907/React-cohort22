@@ -1,6 +1,6 @@
 import React, { createContext } from "react";
 
-const userDatacontext = createContext()
+export const userDatacontext = createContext()
 
 const Usercontext = (props) => {
   const data = "sarthack"
