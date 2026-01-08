@@ -1,11 +1,14 @@
-import React from "react";
+import React, { createContext } from "react";
+
+const userDatacontext = createContext()
 
 const Usercontext = (props) => {
-  console.log();
-  
+  const data = "sarthack"
   return (
     <div>
-      {props.children}
+      <userDatacontext.Provider value={data}>
+        {props.children}
+      </userDatacontext.Provider>
     </div>
   );
 };
