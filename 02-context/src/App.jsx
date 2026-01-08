@@ -1,22 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Productdetails from "./pages/Productdetails";
 
 const App = () => {
-  const getData = async () => {
-    const response = await axios.get("https://fakestoreapi.com/products");
-    console.log(response.data);
-  };
+ 
   return (
-    <div>
-      <button
-        onClick={() => {
-          getData();
-        }}
-        className="h-7 w-30 rounded-2xl bg-blue-300 text-sm font-semibold"
-      >
-        get data
-      </button>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/product" element={<Products/>}/>
+      <Route path="/product/:id" element={<Productdetails/>}/>
+    </Routes>
   );
 };
 
