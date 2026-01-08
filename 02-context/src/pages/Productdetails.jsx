@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ProductDatacontext } from "../context/Productcontext";
+import { useParams } from "react-router-dom";
 
 const Productdetails = () => {
-  return (
-    <div>Productdetails</div>
-  )
-}
+  const data = useContext(ProductDatacontext);
+  console.log(data);
 
-export default Productdetails
+  const { id } = useParams();
+
+  const selectedData = data.find(function(elem){
+    id == elem.id
+  });
+  console.log(selectedData);
+
+  return <div></div>;
+};
+
+export default Productdetails;
