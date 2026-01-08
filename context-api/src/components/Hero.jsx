@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
-import { UserDataContext } from "../context/Usercontext";
+import React from 'react'
+import Nav from './Nav'
 
 const Hero = () => {
-  const data = useContext(UserDataContext)
   return (
-    <div className="w-full h-10  text-center ">
-      <h1 className="text-5xl">ki haal hai bhai {data}</h1>
+    <div className='h-[80%] w-full bg-blue-300 '>  
+      <h1>Hero section</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

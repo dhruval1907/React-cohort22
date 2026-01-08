@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Products = () => {
   return (
-    <div>
-        <h1 className='text-white font-semibold text-3xl'>products</h1>
+    <div className="h-[80%] w-full bg-blue-300 ">
+      <h1>Hero section</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

@@ -2,9 +2,8 @@ import React from 'react'
 
 const Men = () => {
   return (
-    <div>
-        <h1 className='text-white font-semibold text-3xl'>Men</h1>
-        
+   <div className='h-[80%] w-full bg-blue-500 '>  
+      <h1>Men section</h1>
     </div>
   )
 }
