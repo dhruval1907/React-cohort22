@@ -1,18 +1,26 @@
-import React from 'react'
-import {Canvas} from "@react-three/fiber";
-import {Environment, OrbitControls} from "@react-three/drei";
-import Maccontaner from './Maccontaner';
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { Environment, OrbitControls, ScrollControls } from "@react-three/drei";
+import Maccontaner from "./Maccontaner";
+
 const App = () => {
   return (
-    <Canvas camera={{fov :20 ,position :[0,-2,120]}}>
-      <OrbitControls />
-      <Environment files={["https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/studio_small_09_2k.hdr"]} />
-      <mesh>
-        <boxGeometry />
-        <Maccontaner/>
-      </mesh>
-    </Canvas>
-  )
-}
+    <Canvas camera={{ fov: 35, position: [0, 0, 6] }}>
+      {/* LIGHTS */}
+      {/* <ambientLight intensity={0.6} />
+      <directionalLight position={[5, 5, 5]} intensity={1} /> */}
 
-export default App
+      {/* CONTROLS */}
+      <OrbitControls target={[0, 0, 0]} />
+
+      {/* ENVIRONMENT */}
+      <Environment preset="studio" />
+
+      <ScrollControls pages={3}>
+        <Maccontaner />
+      </ScrollControls>
+    </Canvas>
+  );
+};
+
+export default App;
