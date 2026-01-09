@@ -29,7 +29,7 @@ const App = () => {
           Quo sit recusandae pariatur laborum.
         </p>
       </div>
-
+;
       <Canvas camera={{ fov: 35, position: [0, 0, 6] }}>
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Environment preset="studio" />
