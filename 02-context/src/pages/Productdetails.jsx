@@ -8,9 +8,7 @@ const Productdetails = () => {
 
   const { id } = useParams();
 
-  const selectedData = data.find(function(elem){
-    id == elem.id
-  });
+  const selectedData = data.find((elem)=>elem.id == id)
   console.log(selectedData);
 
   return <div></div>;
