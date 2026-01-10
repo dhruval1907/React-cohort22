@@ -32,7 +32,7 @@ const App = () => {
         dispatch(byfive(Number(num)))
       }}
       >
-        increase by 5
+        increase by {num}
       </button>
       <input type="number"  
         onChange={(e)=>{
