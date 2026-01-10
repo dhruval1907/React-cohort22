@@ -11,7 +11,7 @@ const counterSlice = createSlice({
             state.value += 1
         },
         decrenmet : (state)=>{
-            state.value += 1
+            state.value -= 1
         }
     }
 })
