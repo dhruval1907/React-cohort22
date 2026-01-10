@@ -1,24 +1,25 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 
-const 
+const counter = createSlice({
+    name :"counter",
+    initialState:{
+        value : 0
+    },
+    reducers:{
+        increnment : (state)=>{
+            state.value += 1
+        },
+        decrenmet : (state)=>{
+            state.value += 1
+        }
+    }
+})
 
 
+export const {increnment,decrenmet} = counter.actions;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default counter.reducer;
 
 
 // import {createSlice} from "@reduxjs/toolkit";
