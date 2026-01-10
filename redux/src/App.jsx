@@ -1,6 +1,6 @@
 import { useDispatch} from "react-redux";
 import { useSelector} from "react-redux";
-import { decrenmet, increnment } from "./features/Counterslice";
+import { byvalue, decrenmet, increnment } from "./features/Counterslice";
 import { useState } from "react";
 const App = () => {
 
@@ -21,6 +21,10 @@ const App = () => {
       <button
       onClick={()=>{
         dispatch(decrenmet())
+      }}>decrease</button>
+      <button
+      onClick={()=>{
+        dispatch(byvalue(Number(num)))
       }}>decrease</button>
       <input type="number" value={num}
       onChange={(e)=>{
