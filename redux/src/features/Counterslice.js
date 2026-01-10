@@ -12,12 +12,15 @@ const counterSlice = createSlice({
         },
         decrenmet : (state)=>{
             state.value -= 1
+        },
+        byvalue : (state,actions)=>{
+            state.value -= actions.payload
         }
     }
 })
 
 
-export const {increnment,decrenmet} = counterSlice.actions;
+export const {increnment,decrenmet,byvalue} = counterSlice.actions;
 
 export default counterSlice.reducer;
 
