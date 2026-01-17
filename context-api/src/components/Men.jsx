@@ -1,12 +1,8 @@
-import React, { useContext } from 'react'
-import { userDatacontext } from '../context/Usercontext'
+import React from 'react'
 
 const Men = () => {
-  const data = useContext(userDatacontext)
   return (
-   <div className='h-[80%] w-full bg-blue-500 '>  
-      <h1>Men section {data}</h1>
-    </div>
+    <div>Men</div>
   )
 }
 

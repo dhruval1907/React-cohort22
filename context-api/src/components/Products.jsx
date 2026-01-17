@@ -1,13 +1,9 @@
-import React, { useContext } from "react";
-import { userDatacontext } from "../context/Usercontext";
+import React from 'react'
 
 const Products = () => {
-  const data = useContext(userDatacontext)
   return (
-    <div className="h-[80%] w-full bg-blue-300 ">
-      <h1>product section {data}</h1>
-    </div>
-  );
-};
+    <div>Products</div>
+  )
+}
 
-export default Products;
+export default Products

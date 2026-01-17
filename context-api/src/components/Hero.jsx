@@ -1,13 +1,8 @@
-import React, { useContext } from 'react'
-import Nav from './Nav'
-import { userDatacontext } from '../context/Usercontext'
+import React from 'react'
 
 const Hero = () => {
-  const data = useContext(userDatacontext)
   return (
-    <div className='h-[80%] w-full bg-blue-300 '>  
-      <h1>Hero section {data}</h1>
-    </div>
+    <div>Hero</div>
   )
 }
 
