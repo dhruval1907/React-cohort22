@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Uesredatacontext } from '../context/Usercontext'
 
 const Products = () => {
+
+  const data = useContext(Uesredatacontext)
+
   return (
-    <div>Products</div>
+    <div>
+      <h1>Products {data}</h1>
+    </div>
   )
 }
 
